@@ -105,6 +105,7 @@
             color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            display: block; /* Default for desktop */
         }
 
         .theme-btn {
@@ -250,19 +251,19 @@
             padding: 1rem;
             text-align: center;
             font-size: 0.75rem;
-            color: #000000;
+            color: var(--text-secondary);
             border-top: 1px solid var(--glass-border);
         }
 
         /* Footer Link (Starry Stories) */
         .footer-note a.starry-link {
-            font-family: "Times New Roman", Times, serif; /* Updated Font */
+            font-family: "Times New Roman", Times, serif;
             font-weight: 600;
             font-style: italic;
             font-size: 0.9rem;
             color: #000000;
             text-decoration: none;
-            background-color: #ffbf00;
+            background-color: #ffa600;
             padding: 2px 5px;
             border-radius: 4px;
             margin-right: 4px;
@@ -275,6 +276,11 @@
             color: #000000;
             text-decoration: none;
             transition: color 0.2s;
+        }
+
+        .footer-note .ash-signature:hover {
+            color: #555;
+            text-decoration: underline;
         }
 
         /* Map Area */
@@ -439,7 +445,7 @@
                 flex-direction: column;
             }
 
-            /* FIX: Ensure footer is visible */
+            /* Footer Visible */
             .footer-note {
                 display: block; 
                 padding-bottom: 1.5rem;
@@ -486,7 +492,7 @@
             }
 
             .brand {
-                padding: 2rem 1rem 0.75rem 1rem;
+                padding: 2rem 1rem 1rem 1rem; /* Adjusted Padding */
             }
 
             /* Hiding elements when collapsed */
@@ -512,8 +518,11 @@
                 font-size: 1rem;
             }
 
+            /* UPDATED: Subtitle Visible on Mobile */
             .brand-text .subtitle {
-                display: none;
+                display: block;
+                font-size: 0.65rem;
+                margin-top: 2px;
             }
 
             .search-box {
@@ -791,7 +800,7 @@
                 <p>
                     <a href="https://www.starrystories.com/remote-sensing-jobs-in-india/" target="_blank"
                         rel="noopener noreferrer" class="starry-link">STARRY STORIES</a>
-                    | created by <a href="https://github.com/asishk009" target="_blank" rel="noopener noreferrer" class="ash-signature">AshGeoX</a>
+                    | created by <a href="https://github.com/asishk01" target="_blank" rel="noopener noreferrer" class="ash-signature">AshGeoX</a>
                 </p>
             </div>
         </nav>
@@ -1226,9 +1235,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
